@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="YouTube">
+    <output-path>$PROJECT_DIR$/out/artifacts/YouTube</output-path>
+    <root id="archive" name="YouTube.jar">
+      <element id="module-output" name="YouTubeAppXP" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/sealedtx/java-youtube-downloader/3.1.0/java-youtube-downloader-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.62/fastjson-1.2.62.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../libDialog/out/artifacts/libDialog/libDialog.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
