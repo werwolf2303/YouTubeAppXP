@@ -35,6 +35,15 @@ public class Initiator {
         if(!new ConfigHandler().read("CacheLocation").equals("")) {
             PublicThings.CacheLocation = new ConfigHandler().read("CacheLocation");
         }
+        try {
+            if(args[0].equals("--nogui")) {
+                if(args[1].equals("--nodownload")) {
+                    System.out.println("YouTube Video URL: " + new Client().get(new Utils().getId(args[2]), VideoQuality.hd1080));
+                }
+            }
+        }catch(ArrayIndexOutOfBoundsException aioobe) {
+
+        }
         new GlobalLookAndFeel().setLookAndFeel(LookAndFeel.WindowsClassic.getClassName());
         if(new ConfigHandler().read("SystemTray").equals("true")) {
             PublicThings.tray = new SystemTrayDialog();
